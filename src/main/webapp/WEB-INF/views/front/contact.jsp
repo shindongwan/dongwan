@@ -4,6 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>   
+<sec:authentication var="principal" property="principal"/> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,6 +39,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="logo">
 				<a href="/"><img src="../../resources/images/logo.png" alt=""></a>
+				<sec:authorize access="isAuthenticated()">
+				    <b>${principal.username}님, 반갑습니다!</b>	
+					<a href="/front/logout"> Logout</a>
+					
+					</sec:authorize>
+				
+		<sec:authorize access="isAnonymous()">		
+		<li><a href="/customLogin"><i class="fa fa-sign-out fa-fw"></i>
+		    Login</a></li>
+		</sec:authorize>
 			</div>
 			<div class="header">
 				<div class="menu">

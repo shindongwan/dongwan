@@ -38,11 +38,24 @@ body a{
 	color:#fff;
 	position: absolute;
 	right: 0;
-	margin-right: 110px;
-	
+	margin-right: 110px;	
+}
+
+.logo b:nth-child(2) {
+	color:#fff;
+	position: absolute;
+	right: 0;
+	margin-right: 110px;	
 }
 
 .logo a:nth-child(3) {
+	color:#fff;
+	position: absolute;
+	right: 0;
+	margin-right: 30px;
+	
+}
+.logo b:nth-child(3) {
 	color:#fff;
 	position: absolute;
 	right: 0;

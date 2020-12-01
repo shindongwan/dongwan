@@ -6,6 +6,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> 
+
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>   
+<sec:authentication var="principal" property="principal"/>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,22 +41,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="head" id="home">
 		<div class="container">
 			<div class="logo">
-				<a href="/"><img src="resources/images/logo.png" alt=""></a>
-				<a href="front/login">로그인</a>
-				<a href="front/sign_up">회원 가입</a>
+				<a href="/"><img src="../../../resources/images/logo.png" alt=""></a>
+							
+					<sec:authorize access="isAuthenticated()">
+				    <b>${principal.username}님, 반갑습니다!</b>	
+					<a href="/front/logout"> Logout</a>
+					
+					</sec:authorize>
+				
+		<sec:authorize access="isAnonymous()">		
+		<li><a href="/customLogin"><i class="fa fa-sign-out fa-fw"></i>
+		    Login</a></li>
+		</sec:authorize>
+				
 			</div>
 			<div class="header">
 				<div class="menu">
-                    <a class="toggleMenu" href="#"><img src="resources/images/menu-icon.png" alt="" /> </a>
+                    <a class="toggleMenu" href="#"><img src="../../../resources/images/menu-icon.png" alt="" /> </a>
 					<ul class="nav" id="nav">
 						<li><a href="/">Home</a></li>
 						<li><a href="/front/about">About</a></li>						
 						<li><a href="/front/blogs">Free_Board</a></li>						
 						<li><a href="/front/gallery">Gallery</a></li>
 						<li><a href="/front/contact">Contact</a></li>
+						
 					</ul>
                     <!----start-top-nav-script---->
-		            <script type="text/javascript" src="resources/front/js/responsive-nav.js"></script>
+		            <script type="text/javascript" src="../../../resources/front/js/responsive-nav.js"></script>
 					<script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){

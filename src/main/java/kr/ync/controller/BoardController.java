@@ -23,6 +23,7 @@ import lombok.extern.log4j.Log4j;
 @Controller
 @Log4j
 @RequestMapping("/front/*")
+//@RequestMapping("/admin/*")
 public class BoardController {
    
    @Value("${globalConfig.uploadPath}")
@@ -53,10 +54,10 @@ public class BoardController {
    }
    
    
-   
-//   @GetMapping("/index")
-//   public void index() {
-//   }
+   @PreAuthorize("hasRole('ROLE_USER')")
+   @GetMapping("/index")
+   public void index() {
+   }
    
    @PreAuthorize("hasRole('ROLE_ADMIN')")
    @GetMapping("/list")
@@ -111,7 +112,7 @@ public class BoardController {
 //   }
 
    @PreAuthorize("principal.username == #board.writer")
-   @PostMapping("/modify")
+   @PostMapping("/modify1")
    public String modify(MultipartFile[] uploadFile, BoardVO board, @ModelAttribute("cri") Criteria cri, RedirectAttributes rttr) {
       log.info("modify:" + board);
       

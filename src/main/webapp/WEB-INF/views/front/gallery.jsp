@@ -4,6 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>   
+<sec:authentication var="principal" property="principal"/> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +53,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="logo">
 				<a href="/"><img src="../../resources/images/logo.png" alt=""></a>
+				<sec:authorize access="isAuthenticated()">
+				    <b>${principal.username}님, 반갑습니다!</b>	
+					<a href="/front/logout"> Logout</a>
+					
+					</sec:authorize>
+				
+		<sec:authorize access="isAnonymous()">		
+		<li><a href="/customLogin"><i class="fa fa-sign-out fa-fw"></i>
+		    Login</a></li>
+		</sec:authorize>
 			</div>
 			<div class="header">
 				<div class="menu">
@@ -89,7 +104,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <a class="fancybox" href="../../resources/images/one-1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="../../resources/images/one-1.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g1.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../../resources/images/g1.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/234.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../../resources/images/g1.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
 					  <a class="fancybox" href="../../resources/images/one-3.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="../../resources/images/one-3.jpg" class="img-style row6" alt=""><span> </span></a>

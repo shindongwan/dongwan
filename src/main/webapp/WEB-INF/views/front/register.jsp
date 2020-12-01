@@ -22,7 +22,7 @@
       <!-- /.panel-heading -->
       <div class="panel-body">
 
-        <form role="form" action="/admin/register" method="post" enctype="multipart/form-data">
+        <form role="form" action="/front/register" method="post" enctype="multipart/form-data">
            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
            <!--
            controller에서 파라미터 수집시 upload file은 uploadFile 이름으로 server로 넘어간다.(binary data로)

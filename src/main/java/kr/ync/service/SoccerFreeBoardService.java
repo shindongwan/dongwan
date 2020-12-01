@@ -2,6 +2,7 @@ package kr.ync.service;
 
 import java.util.List;
 
+import kr.ync.domain.BoardVO;
 import kr.ync.domain.Criteria;
 import kr.ync.domain.SoccerFreeBoardVO;
 

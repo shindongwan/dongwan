@@ -37,8 +37,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="logo">
 				<a href="/"><img src="../../../resources/images/logo.png" alt=""></a>
-				<a href="front/login">로그인</a>
-				<a href="front/sign_up">회원 가입</a>
+				<a href="login">로그인</a>
+				<a href="sign_up">회원 가입</a>
 			</div>
 			<div class="header">
 				<div class="menu">
@@ -80,21 +80,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="form-36-mian section-gap">
 			<div class="wrapper">
 				<div class="form-inner-cont">
-					<h3>Create your account</h3>
-					<form action="#" method="post" class="signin-form">
+					<h3>Login to your account</h3>
+					<form action="/login" method="post" class="signin-form">
 						<div class="form-input">
-							<span class="fa fa-user-o" aria-hidden="true"></span> <input type="text" name="id" placeholder="ID" required />
-						</div>
-						
-						
-						
+							<span class="fa fa-user-o" aria-hidden="true"></span> <input type="text" name="username" placeholder="ID" required />
+						</div>		
 						
 						
 						<div class="form-input">
 							<span class="fa fa-key" aria-hidden="true"></span> <input type="password" name="password" placeholder="Password"
 								required />
 						</div>
-						
+						<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+                        <a href="/front/forgot-password"></a>
 						<div class="login-remember d-grid">
 							<label class="check-remaind">
 								<input type="checkbox">

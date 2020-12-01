@@ -27,7 +27,7 @@ public class HomeController {
 	public String home() {
 		
 		
-		return "front/index";
+		return "home";
 	}
 	
 }

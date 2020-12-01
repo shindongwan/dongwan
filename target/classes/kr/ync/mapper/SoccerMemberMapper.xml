@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.ync.mapper.SoccerMemberMapper">
+
+	
+	
+	<resultMap type="kr.ync.domain.SoccerMemberVO" id="memberMap">
+      <id property="member_id" column="member_id"/>
+      <result property="member_id" column="member_id"/>
+      <result property="name" column="name"/>
+      <result property="nick" column="nick"/>
+      <result property="email" column="email"/>
+      <result property="pwd" column="pwd"/>
+      <collection property="auth" resultMap="authMap">
+      </collection>
+   </resultMap>
+   
+   <resultMap type="kr.ync.domain.AuthVO" id="authMap">
+      <result property="member_id" column="member_id"/>
+      <result property="auth" column="auth"/>
+   </resultMap>
+   
+   <select id="read" resultMap="memberMap">
+   SELECT   member_id,
+         name,
+         nick,         
+         email,
+         pwd,
+         auth
+   FROM   member
+   WHERE   member_id = #{member_id} 
+   </select>
 	
 	<sql id="criteria">
 		<trim prefix="(" suffix=") AND " prefixOverrides="OR">
@@ -45,10 +74,7 @@
 		#{title}, #{content}, #{writer}, #{file_1}, #{file_2}, #{file_3})
 	</insert>
 	
-	<select id="read" resultType="kr.ync.domain.BoardVO">
-		select * from tbl_board where bno =	#{bno}
-	</select>
-
+	
 
 	<delete id="delete">
 		delete tbl_board where bno = #{bno}

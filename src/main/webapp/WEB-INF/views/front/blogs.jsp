@@ -7,6 +7,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>   
+<sec:authentication var="principal" property="principal"/>   
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,6 +39,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="logo">
 				<a href="/"><img src="../../resources/images/logo.png" alt=""></a>
+				<sec:authorize access="isAuthenticated()">
+				    <b>${principal.username}님, 반갑습니다!</b>	
+					<a href="/front/logout"> Logout</a>
+					
+					</sec:authorize>
+				
+		<sec:authorize access="isAnonymous()">		
+		<li><a href="/customLogin"><i class="fa fa-sign-out fa-fw"></i>
+		    Login</a></li>
+		</sec:authorize>
 			</div>
 			<div class="header">
 				<div class="menu">
@@ -94,7 +106,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                
                 <c:forEach items="${f_board}" var="f_board">
-                  <tr>
+                  <tr>                            
                      <td><c:out value="${f_board.board_idx}" /></td>
                      <td><a class='move' href='<c:out value="${f_board.board_idx}"/>'><c:out value="${f_board.title}" /></a></td>           
                      <td><c:out value="${f_board.member_id}" /></td>
@@ -228,7 +240,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       }
       
       $("#regBtn").on("click", function() {
-         self.location = "/admin/register";
+         self.location = "/front/register";
       });
       
       var actionForm = $("#actionForm");

@@ -196,7 +196,7 @@
 				image,
 				regist_day
 				
-		FROM	(SELECT /*+INDEX_DESC(free_board seq_board_idx) */
+		FROM	(SELECT /*+INDEX_DESC(free_board XPK자유게시판) */
         				rownum rn,
         				board_idx,
         				title,
@@ -215,7 +215,7 @@
       			rownum <= #{pageNum} * #{amount}
       			)
   		WHERE rn > (#{pageNum} -1) * #{amount}
-  		order by board_idx desc  
+  		
 		]]>
 		
 	</select>

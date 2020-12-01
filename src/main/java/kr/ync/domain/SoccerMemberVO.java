@@ -13,5 +13,5 @@ public class SoccerMemberVO {
 	private String name;
 	private String nick;
 	private String regist_day;
-	private List<AuthVO> authList;
+	private List<AuthVO> auth;
 }
