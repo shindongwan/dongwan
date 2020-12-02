@@ -29,20 +29,19 @@
 	</select>
 	
 	<insert id="insert">
-		insert into free_board (board_idx, title, content, image, member_id)
-		values (seq_board_idx.nextval, #{title}, #{content}, #{image}, #{member_id})
+		insert into free_board (board_idx, title, content, member_id, image)
+		values (seq_board_idx.nextval, #{title}, #{content}, #{member_id}, #{image})
 	</insert>
 	
 	<insert id="insertSelectKey">
 
-		<selectKey keyProperty="bno" order="BEFORE"
+		<selectKey keyProperty="board_idx" order="BEFORE"
 			resultType="Long">
-			select seq_board.nextval from dual
+			select seq_board_idx.nextval from dual
 		</selectKey>
 
-		insert into tbl_board (bno,title,content, writer, file_1, file_2, file_3)
-		values (#{bno},
-		#{title}, #{content}, #{writer}, #{file_1}, #{file_2}, #{file_3})
+		insert into free_board (board_idx, title,content, member_id, image)
+		values (#{board_idx}, #{title}, #{content}, #{member_id}, #{image})
 	</insert>
 	
 	<select id="read" resultType="kr.ync.domain.SoccerFreeBoardVO">
@@ -58,13 +57,12 @@
  
 	<update id="update">
 		update free_board
-		set title= #{title},
-		content=#{content},
+		set board_idx = #{board_idx},
+		title= #{title},
+		content =#{content},
 		image = #{image},
-		member_id = #{member_id},
-		regist_day = SYSDATE
-		where board_idx =
-		#{board_idx}
+		member_id = #{member_id}
+		where board_idx = #{board_idx}
 	</update>
 	
 	<!-- <select id="getListWithPaging" resultType="kr.ync.domain.BoardVO">

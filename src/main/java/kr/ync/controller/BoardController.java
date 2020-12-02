@@ -31,12 +31,10 @@ public class BoardController {
    
    @Autowired
    private BoardService service;
-
-   @GetMapping("/register")
+   
    @PreAuthorize("isAuthenticated()")
-   public void register() {
 
-   }
+   
    @GetMapping("/about")
    public void about() {
    }
@@ -52,6 +50,7 @@ public class BoardController {
    @GetMapping("/gallery")
    public void gallery() {
    }
+   
    
    
    @PreAuthorize("hasRole('ROLE_USER')")
@@ -73,36 +72,36 @@ public class BoardController {
 
    }
    
-   @PreAuthorize("isAuthenticated()")
-   @PostMapping("/register")
-   public String register(MultipartFile[] uploadFile, BoardVO board, RedirectAttributes rttr) {
-      
-      int index = 0;
-      for (MultipartFile multipartFile : uploadFile) {
-         if(multipartFile.getSize() > 0) {
-            switch (index) {
-            case 0:
-               board.setFile_1(UploadUtils.uploadFormPost(multipartFile, uploadPath));
-               break;
-            case 1:
-               board.setFile_2(UploadUtils.uploadFormPost(multipartFile, uploadPath));
-               break;
-            default:
-               board.setFile_3(UploadUtils.uploadFormPost(multipartFile, uploadPath));
-               break;
-            }
-         }
-         index++;
-      }
-      
-      log.info("register: " + board);
-
-      service.register(board);
-
-      rttr.addFlashAttribute("result", board.getBno());
-
-      return "redirect:/admin/list";
-   }
+//   @PreAuthorize("isAuthenticated()")
+//   @PostMapping("/register")
+//   public String register(MultipartFile[] uploadFile, BoardVO board, RedirectAttributes rttr) {
+//      
+//      int index = 0;
+//      for (MultipartFile multipartFile : uploadFile) {
+//         if(multipartFile.getSize() > 0) {
+//            switch (index) {
+//            case 0:
+//               board.setFile_1(UploadUtils.uploadFormPost(multipartFile, uploadPath));
+//               break;
+//            case 1:
+//               board.setFile_2(UploadUtils.uploadFormPost(multipartFile, uploadPath));
+//               break;
+//            default:
+//               board.setFile_3(UploadUtils.uploadFormPost(multipartFile, uploadPath));
+//               break;
+//            }
+//         }
+//         index++;
+//      }
+//      
+//      log.info("register: " + board);
+//
+//      service.register(board);
+//
+//      rttr.addFlashAttribute("result", board.getBno());
+//
+//      return "redirect:/admin/list";
+//   }
 
 //   @GetMapping({ "/get", "/modify" })
 //   public void get(@RequestParam("bno") Long bno, @ModelAttribute("cri") Criteria cri, Model model) {

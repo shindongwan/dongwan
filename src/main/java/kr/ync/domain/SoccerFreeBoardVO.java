@@ -15,7 +15,5 @@ public class SoccerFreeBoardVO {
 	private Date regist_day;
 
 	
-	private String file_1;
-	private String file_2;
-	private String file_3;
+	
 }

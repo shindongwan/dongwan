@@ -110,6 +110,12 @@ function getThumbFileName(fullFilePath) {
             value='<c:out value="${f_board.member_id }"/>' readonly="readonly">
         </div>
         
+        <div class="form-group">
+          <img src = "/resources/upload/${board[t]}" />
+          <label>이미지 </label> <input class="form-control" name='image'
+            value='<c:out value="${f_board.image }"/>' readonly="readonly">
+        </div>
+        
         <!-- 업로드 이미지나 파일을 출력 -->
         <c:forEach var="i" begin="1" end="3">
          <c:set var="t" value="file_${i}" />
@@ -117,10 +123,10 @@ function getThumbFileName(fullFilePath) {
                <div class="form-group">
                    <label>이미지${i}</label>
                   <a href="/resources/upload/${board[t]}" target="_blank">
-                  <img src="/resources/upload/${board[t]}" id="thumb_${i}"></a>
+                  <img src="/resources/upload/${board[t]}" id="thumb_${i}" /></a>
                  </div>
                  <script>
-                 document.getElementById('thumb_${i}').src="/resources/upload/" + getThumbFileName('${board[t]}');
+                 document.getElementById('thumb_${i}').src="../../../resources/upload/" + getThumbFileName('${board[t]}');
                </script>
               </c:if>
       </c:forEach>

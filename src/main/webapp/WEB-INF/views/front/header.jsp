@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>The Club Soccer flat Responsive Sports Category Bootstrap Website Template | Home :: w3layouts</title>
+<title>Soccer Board</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta name="keywords" content="Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
@@ -44,7 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="/"><img src="../../../resources/images/logo.png" alt=""></a>
 							
 					<sec:authorize access="isAuthenticated()">
-				    <b>${principal.username}님, 반갑습니다!</b>	
+				    <b>${principal.member.nick}님, 반갑습니다!</b>	
 					<a href="/front/logout"> Logout</a>
 					
 					</sec:authorize>

@@ -26,19 +26,35 @@ public class SoccerFreeBoardMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private SoccerFreeBoardMapper freeboard;
 
+//	@Test
+//	public void testInsert() {
+//		
+//		SoccerFreeBoardVO sc_freeboard = new SoccerFreeBoardVO();
+//		
+//		sc_freeboard.setTitle("chelsea Lampard");
+//		sc_freeboard.setContent("blues");
+//		sc_freeboard.setImage("Lampard.jpg");
+//		sc_freeboard.setMember_id("blues");
+//		
+//		freeboard.insert(sc_freeboard);
+//		
+//		log.info(sc_freeboard);
+//	}
+	
 	@Test
-	public void testInsert() {
-		
+	public void testUpdate() {
+
 		SoccerFreeBoardVO sc_freeboard = new SoccerFreeBoardVO();
-		
-		sc_freeboard.setTitle("chelsea blues");
-		sc_freeboard.setContent("blues");
-		sc_freeboard.setImage("drogba.jpg");
-		sc_freeboard.setMember_id("blues");
-		
-		freeboard.insert(sc_freeboard);
-		
-		log.info(sc_freeboard);
+		// 실행전 존재하는 번호인지 확인할 것
+		sc_freeboard.setBoard_idx(836);
+		sc_freeboard.setTitle("수정된 제목");
+		sc_freeboard.setContent("수정된 내용");
+		sc_freeboard.setMember_id("shin");
+		sc_freeboard.setImage("gd");
+
+		int count = freeboard.update(sc_freeboard);
+		log.info("UPDATE COUNT: " + count);
+
 	}
 	
 //	@Test

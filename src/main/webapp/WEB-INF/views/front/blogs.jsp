@@ -280,11 +280,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       });
    });
 </script>
+<%@include file="../includes/footer.jsp"%>
 </div>
 </div>
-					<div class="col-md-8 blog-left">
+					<!--<div class="col-md-8 blog-left">
 						<div class="blog-top-left">
-							<!--  <a href="single.html"><h4>Aenean vitae dui tempus</h4></a>
+							  <a href="single.html"><h4>Aenean vitae dui tempus</h4></a>
 							<div class="post-detail"><p>Posted by <a href="#">Jackie</a> On 10 jan, 2015 <a href="#">Comments (10)</a></p></div>
 							<a href="single.html"><img src="../../resources/images/blog1.jpg" alt=""></a>
 							<h5>Nam pretium metus eget dolor bibendum, sed maximus nulla tristique. Etiam eu interdum massa. Cum sociis natoque penatibus et.</h5>

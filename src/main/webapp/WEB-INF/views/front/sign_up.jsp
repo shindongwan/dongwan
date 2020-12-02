@@ -40,8 +40,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="logo">
 				<a href="/"><img src="../../../resources/images/logo.png" alt=""></a>
-				<a href="front/login">로그인</a>
-				<a href="front/sign_up">회원 가입</a>
+				<a href="login">로그인</a>
+				<a href="sign_up">회원 가입</a>
 			</div>
 			<div class="header">
 				<div class="menu">
