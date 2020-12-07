@@ -140,9 +140,9 @@ function getThumbFileName(fullFilePath) {
    <div class="form-group">
    <label>이미지</label>
       <c:if test="${not empty board[t]}">
-         <a href="/resources/upload/${board[t]}" target="_blank"><img src="../../../resources/upload/${board[t]}" id="thumb_${i}"></a>
+         <a href="../../../resources/upload/${board[t]}" target="_blank"><img src="../../../resources/upload/${board[t]}" id="thumb_${i}"></a>
          <script>
-              document.getElementById('thumb_${i}').src="../../../resources/upload/" + getThumbFileName('${board[t]}');
+              document.getElementById('thumb_${i}').src="../../../resources/upload/" + getThumbFileName('${f_board[t]}');
          </script>
       </c:if>
       <input type="file" class="form-control" name='uploadFile'>
@@ -155,8 +155,8 @@ function getThumbFileName(fullFilePath) {
          <button type="submit" data-oper='modify' class="btn btn-default">Modify</button>
          <button type="submit" data-oper='remove' class="btn btn-danger">Remove</button>
       </c:if>
-   </sec:authorize>
-     <button type="submit" data-oper='list' class="btn btn-info">List</button>
+   </sec:authorize>     		
+   <button type="submit" data-oper='list' class="btn btn-info">List</button>
 </form>
 
 

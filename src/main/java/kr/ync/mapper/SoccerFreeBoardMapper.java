@@ -27,4 +27,5 @@ public interface SoccerFreeBoardMapper {
 	public int update(SoccerFreeBoardVO soccer_free_board);
 	
 	public int delete(Long board_idx);
+	
 }

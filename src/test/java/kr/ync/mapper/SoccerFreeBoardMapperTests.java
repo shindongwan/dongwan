@@ -41,21 +41,21 @@ public class SoccerFreeBoardMapperTests {
 //		log.info(sc_freeboard);
 //	}
 	
-	@Test
-	public void testUpdate() {
-
-		SoccerFreeBoardVO sc_freeboard = new SoccerFreeBoardVO();
-		// 실행전 존재하는 번호인지 확인할 것
-		sc_freeboard.setBoard_idx(836);
-		sc_freeboard.setTitle("수정된 제목");
-		sc_freeboard.setContent("수정된 내용");
-		sc_freeboard.setMember_id("shin");
-		sc_freeboard.setImage("gd");
-
-		int count = freeboard.update(sc_freeboard);
-		log.info("UPDATE COUNT: " + count);
-
-	}
+//	@Test
+//	public void testUpdate() {
+//
+//		SoccerFreeBoardVO sc_freeboard = new SoccerFreeBoardVO();
+//		// 실행전 존재하는 번호인지 확인할 것
+//		sc_freeboard.setBoard_idx(836);
+//		sc_freeboard.setTitle("수정된 제목");
+//		sc_freeboard.setContent("수정된 내용");
+//		sc_freeboard.setMember_id("shin");
+//		sc_freeboard.setImage("gd");
+//
+//		int count = freeboard.update(sc_freeboard);
+//		log.info("UPDATE COUNT: " + count);
+//
+//	}
 	
 //	@Test
 //	public void testGetList() {
@@ -88,6 +88,12 @@ public class SoccerFreeBoardMapperTests {
 //
 //		log.info("totalCnt = " + totalCnt);
 //
+//	}
+	
+//	@Test
+//	public void testDelete() {
+//
+//		log.info("DELETE COUNT: " + freeboard.delete(837L));
 //	}
 
 }

@@ -141,16 +141,16 @@ public class BoardController {
       return "redirect:/admin/list" + cri.getListLink();
    }
 
-   @PreAuthorize("principal.username == #writer")
-   @PostMapping("/remove")
-   public String remove(@RequestParam("bno") Long bno, Criteria cri, RedirectAttributes rttr, String writer) {
-
-      log.info("remove..." + bno);
-      if (service.remove(bno)) {
-         rttr.addFlashAttribute("result", "success");
-      }
-
-      return "redirect:/admin/list" + cri.getListLink();
-   }
+//   @PreAuthorize("principal.username == #writer")
+//   @PostMapping("/remove")
+//   public String remove(@RequestParam("bno") Long bno, Criteria cri, RedirectAttributes rttr, String writer) {
+//
+//      log.info("remove..." + bno);
+//      if (service.remove(bno)) {
+//         rttr.addFlashAttribute("result", "success");
+//      }
+//
+//      return "redirect:/admin/list" + cri.getListLink();
+//   }
 
 }

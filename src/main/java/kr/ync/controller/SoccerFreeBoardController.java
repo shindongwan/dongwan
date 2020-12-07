@@ -97,17 +97,16 @@ public class SoccerFreeBoardController {
 	      return "redirect:/front/blogs" + cri.getListLink();
 	   }
 //
-//	   @PreAuthorize("principal.username == #member_id")
-//	   @PostMapping("/remove")
-//	   public String remove(@RequestParam("bno") Long bno, Criteria cri, RedirectAttributes rttr, String writer) {
-//
-//	      log.info("remove..." + bno);
-//	      if (service.remove(bno)) {
-//	         rttr.addFlashAttribute("result", "success");
-//	      }
-//
-//	      return "redirect:/front/blogs" + cri.getListLink();
-//	   }
+	   @PostMapping("/remove")
+	   public String remove(@RequestParam("board_idx") Long board_idx, Criteria cri, RedirectAttributes rttr) {
+
+	      log.info("remove..." + board_idx);
+	      if (service.remove(board_idx)) {
+	         rttr.addFlashAttribute("result", "success");
+	      }
+
+	      return "redirect:/front/blogs" + cri.getListLink();
+	   }
 	
 	@GetMapping("/register")
 //	@PreAuthorize("isAuthenticated()")
