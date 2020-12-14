@@ -60,7 +60,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <a class="toggleMenu" href="#"><img src="../../../resources/images/menu-icon.png" alt="" /> </a>
 					<ul class="nav" id="nav">
 						<li><a href="/">Home</a></li>
-						<li><a href="/front/about">About</a></li>						
+						<li><a href="/front/about">Blogs</a></li>						
 						<li><a href="/front/blogs">Free_Board</a></li>						
 						<li><a href="/front/gallery">Gallery</a></li>
 						<li><a href="/front/contact">Contact</a></li>

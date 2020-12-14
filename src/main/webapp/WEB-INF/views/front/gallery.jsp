@@ -101,61 +101,61 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a class="fancybox" href="../../resources/images/one-1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="../../resources/images/one-1.jpg" class="img-style row6" alt=""><span> </span></a>
+					 <a class="fancybox" href="../../resources/images/chelsea.jpg" data-fancybox-group="gallery" title="Chelsea F.C."><img src="../../resources/images/chelsea.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/234.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../../resources/images/g1.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/tot.jpg" data-fancybox-group="gallery" title="Tottenham Hotspur F.C."><img src="../../resources/images/tot.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/one-3.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="../../resources/images/one-3.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/mc.jpg" data-fancybox-group="gallery" title="Manchester City F.C."><img src="../../resources/images/mc.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>		
 				
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g2.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="../../resources/images/g2.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/liverpool.jpg" data-fancybox-group="gallery" title="Liverpool F.C."><img src="../../resources/images/liverpool.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				
 			</div> 	
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a class="fancybox" href="../../resources/images/g3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="../../resources/images/g3.jpg" class="img-style row6" alt=""><span> </span></a>
+					 <a class="fancybox" href="../../resources/images/bar.jpg" data-fancybox-group="gallery" title="F.C. Barcelona"><img src="../../resources/images/bar.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/one-2.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../../resources/images/one-2.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/real.jpg" data-fancybox-group="gallery" title="Real Madrid C.F."><img src="../../resources/images/real.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g4.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="../../resources/images/g4.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/at.jpg" data-fancybox-group="gallery" title="Atlético Madrid"><img src="../../resources/images/at.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/one-1.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="../../resources/images/one-1.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/sevilla.jpg" data-fancybox-group="gallery" title="Sevilla F.C."><img src="../../resources/images/sevilla.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 			</div>
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a class="fancybox" href="../../resources/images/one-3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="../../resources/images/one-3.jpg" class="img-style row6" alt=""><span> </span></a>
+					 <a class="fancybox" href="../../resources/images/munchen.jpg" data-fancybox-group="gallery" title="F.C. Bayern München"><img src="../../resources/images/munchen.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g4.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../../resources/images/g4.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/bvb.jpg" data-fancybox-group="gallery" title="Borussia Dortmund"><img src="../../resources/images/bvb.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/one-1.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="../../resources/images/one-1.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/rb.jpg" data-fancybox-group="gallery" title="RB Leipzig"><img src="../../resources/images/rb.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g3.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="../../resources/images/g3.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/psg.jpg" data-fancybox-group="gallery" title="Paris Saint-Germain F.C."><img src="../../resources/images/psg.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 			</div> 				
 			
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a class="fancybox" href="../../resources/images/g1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="../../resources/images/g1.jpg" class="img-style row6" alt=""><span> </span></a>
+					 <a class="fancybox" href="../../resources/images/juven.jpg" data-fancybox-group="gallery" title="Juventus F.C."><img src="../../resources/images/juven.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/one-2.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../../resources/images/one-2.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/inter.jpg" data-fancybox-group="gallery" title="F.C. Internazionale Milano"><img src="../../resources/images/inter.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g2.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="../../resources/images/g2.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/asroma.jpg" data-fancybox-group="gallery" title="A.S. Roma"><img src="../../resources/images/asroma.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					  <a class="fancybox" href="../../resources/images/g3.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="../../resources/images/g3.jpg" class="img-style row6" alt=""><span> </span></a>
+					  <a class="fancybox" href="../../resources/images/ajax.jpg" data-fancybox-group="gallery" title="A.F.C. Ajax"><img src="../../resources/images/ajax.jpg" class="img-style row6" alt=""><span> </span></a>
 				</div>
 			</div> 	
    </div>
